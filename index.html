@@ -56,10 +56,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home" class="page-scroll">Home</a></li>
         <li><a href="#services-section" class="page-scroll">Services</a></li>
-        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
+        <!-- <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
         <li><a href="#about-section" class="page-scroll">About</a></li>
         <li><a href="#team-section" class="page-scroll">Team</a></li>
-        <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
+        <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li> -->
         <li><a href="#contact-section" class="page-scroll">Contact</a></li>
       </ul>
     </div>
@@ -70,6 +70,12 @@
 
 <!-- Header -->
 <header class="text-center" name="home">
+  <div class="intro-slider">
+    <div class="img-holder" style="background-image: url('img/intro1.jpg')"></div>  
+    <div class="img-holder" style="background-image: url('img/intro2.jpg')"></div>
+    <div class="img-holder" style="background-image: url('img/intro3.jpg')"></div>
+    <div class="img-holder" style="background-image: url('img/intro4.jpg')"></div>
+  </div>
   <div class="intro-text">
     <h1 class="wow fadeInDown">Brands needs <strong><span class="color">Attention</span></strong></h1>
     <p class="wow fadeInDown">we make that happen for you</p>
@@ -83,7 +89,7 @@
       <h2>Our <strong>Services</strong></h2>
       <hr>
       <div class="clearfix"></div>
-      <p>We provide services beyond <i>In Hand Branding</i>. Let us make sure that you get most impactful outreach to the right crowd for your brand.</p>
+      <p>At "Brand In Hand" we capture the most common habit of tea sipping by Indians to provide a new mode of OOH advertising solution. We do this through branding on paper cups that are used by local vendors (tea/juice vendors) located at targeted locations (near offices, metro stations, colleges, malls etc.). It provides targeted, cost effective and exclusivity to our customers.</p>
     </div>
     <div class="space"></div>
     <div class="row">
@@ -100,15 +106,15 @@
         <p>All thats left is to get your add in the hands of your potential customers. You can trust our network to make it happen in a blink.</p>
       </div>
       <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms"> <i class="fa fa-rocket"></i>
-        <h4><strong>Analytics</strong></h4>
-        <p>Let us take you further then reaching out. We come back with numbers that you would want to know.</p>
+        <h4><strong>Market Research</strong></h4>
+        <p>Let us take you further than reaching out. We come back with numbers that you would want to know.</p>
       </div>
     </div>
   </div>
 </div>
 <!-- Portfolio Section -->
-<div id="works-section" class="text-center">
-  <div class="container"> <!-- Container -->
+<!-- <div id="works-section" class="text-center">
+  <div class="container"> 
     <div class="section-title wow fadeInDown">
       <h2>Our <strong>Portfolio</strong></h2>
       <hr>
@@ -221,9 +227,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- About Section -->
-<div id="about-section">
+<!-- <div id="about-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2><strong>About</strong> us</h2>
@@ -262,9 +268,9 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- Team Section -->
-<div id="team-section" class="text-center">
+<!-- <div id="team-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
       <h2>Meet the <strong>Team</strong></h2>
@@ -328,8 +334,8 @@
     </div>
   </div>
 </div>
-<!-- Testimonials Section -->
-<div id="testimonials-section" class="text-center">
+ --><!-- Testimonials Section -->
+<!-- <div id="testimonials-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
       <h2>What our <strong>Clients</strong> say</h2>
@@ -354,7 +360,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Contact Section -->
 <div id="contact-section" class="text-center">
@@ -362,7 +368,7 @@
     <div class="section-title wow fadeInDown">
       <h2><strong>Contact</strong> us</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+      <p>There are always new ways of presenting yourself. We help you choose good ones.</p>
     </div>
     <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="200ms">
       <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
@@ -370,7 +376,7 @@
           New York, NY 17022</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-        <p>info@companyname.com</p>
+        <p>contact@brandinhand.in</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
         <p> +1 800 123 1234</p>
@@ -379,23 +385,23 @@
     </div>
     <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="400ms">
 	<h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
+      <form name="sentMessage" id="contactForm" novalidate data-forge-name>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <input type="text" id="name" class="form-control" placeholder="Name" required="required" data-forge-name>
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required" data-forge-name>
               <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required data-forge-name></textarea>
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
@@ -403,22 +409,22 @@
       </form>
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="https://www.facebook.com/brandinyourhand"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.facebook.com/brandinyourhand"><i class="fa fa-twitter"></i></a></li>
+          <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
           <li><a href="#"><i class="fa fa-github"></i></a></li>
           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
         </ul>
       </div>
     </div>
   </div>
 </div>
-<div id="footer">
+<!-- <div id="footer">
   <div class="container">
       <p>Copyright © Tempo. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></p>
   </div>
-</div>
+</div> -->
 
 <!-- Portfolio Modals --> 
 <!-- Use the modals below to showcase details about your portfolio projects! --> 
